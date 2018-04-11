@@ -4,11 +4,12 @@ language: ruby
 rvm:
   - 2.0.0
   - 2.1.10
-  - 2.2.7
-  - 2.3.4
-  - 2.4.1
+  - 2.2.9
+  - 2.3.7
+  - 2.4.4
+  - 2.5.1
   - ruby-head
-  - jruby-9.1.14.0
+  - jruby-9.1.16.0
 gemfile:
   - gemfiles/Gemfile.rails-5-0-stable
   - gemfiles/Gemfile.rails-5-1-stable
@@ -21,7 +22,7 @@ matrix:
       gemfile: Gemfile
     - rvm: 2.1.10
       gemfile: Gemfile
-    - rvm: jruby-9.1.14.0
+    - rvm: jruby-9.1.16.0
       gemfile: Gemfile
     - rvm: 1.9.3
       gemfile: gemfiles/Gemfile.rails-5-0-stable
@@ -29,9 +30,9 @@ matrix:
       gemfile: gemfiles/Gemfile.rails-5-0-stable
     - rvm: 2.1.10
       gemfile: gemfiles/Gemfile.rails-5-0-stable
-    - rvm: jruby-9.1.14.0
+    - rvm: jruby-9.1.16.0
       gemfile: gemfiles/Gemfile.rails-5-0-stable
-    - rvm: jruby-9.1.14.0
+    - rvm: jruby-9.1.16.0
       gemfile: gemfiles/Gemfile.rails-5-1-stable # rack 2.0.1 requires Ruby version >= 2.2.2; any sol'n for jruby?
     - rvm: 1.9.3
       gemfile: gemfiles/Gemfile.rails-5-1-stable # rack 2.0.1 requires Ruby version >= 2.2.2
